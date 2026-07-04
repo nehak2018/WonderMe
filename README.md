@@ -1,62 +1,230 @@
-# StoryBuddy ⭐
+# 🌟 WonderMe: AI-Powered Personalized Storytelling for Kids
 
-StoryBuddy is a multi-agent AI storytelling application built using Google's Agent Development Kit (ADK). Designed for children, StoryBuddy generates engaging, age-appropriate stories and interactive character conversations while ensuring content safety through a dedicated safety review agent.
+> **WonderMe** is an AI-powered storytelling application built using **Google's Agent Development Kit (ADK)** and a **multi-agent architecture** to generate personalized, age-appropriate stories for children. The application combines multiple AI agents to create engaging stories, AI-generated narration, and story transcripts, providing a fun, interactive, and educational storytelling experience.
 
-The application demonstrates a complete multi-agent architecture where specialized agents collaborate to create magical storytelling experiences for kids.
+> 🚀 Developed as part of the **Google AI Agents Intensive – Vibe Coding Capstone**.
 
-## Features
+---
 
-* 📚 Generate personalized children's stories based on age, character, and theme.
-* 🛡️ Multi-agent safety pipeline to ensure child-friendly content.
-* 🗣️ Text-to-Speech narration for immersive storytelling.
-* 🤖 Built with Google Agent Development Kit (ADK).
-* 🎭 Extensible architecture for future conversational character mode.
-* 🎨 Simple Streamlit-based user interface.
+## ✨ Features
 
-## Capstone Project Concepts Demonstrated
-This project demonstrates the following concepts from the **Google & Kaggle 5-Day AI Agents Intensive Course**:
+- 📖 Personalized story generation
+- 🤖 Multi-agent AI workflow using Google ADK
+- 🎭 Multiple fun story characters
+- 👧 Age-appropriate storytelling
+- 🔊 AI-generated audio narration
+- 📝 Story transcripts
+- 🎨 Interactive Streamlit interface
+- 📚 Educational storytelling experience
 
-* ✅ **Multi-Agent System (ADK)**
-  * Implements a sequential multi-agent architecture using Google Agent Development Kit (ADK).Specialized agents collaborate to generate and review stories.
-* ✅ **Agent Skills**
-  * Reusable skills are implemented for story generation and child safety review.
-  * Skills are encapsulated within individual agent modules.
-* ✅ **Security Features**
-  * A dedicated Safety Agent reviews all generated content to ensure stories remain age-appropriate, safe, and child-friendly.
-* ✅ **Deployability**
-  * The application is deployed as a Streamlit application and can be easily run locally or deployed to cloud environments.
-* ⚙️ **Antigravity-Assisted Development**
-  * Antigravity was used during development for rapid prototyping, code generation, and documentation assistance.
+---
 
+## 🏗️ Architecture
 
-## Multi-Agent Architecture
+```text
+                     User
+                      │
+                      ▼
+             WonderMe Streamlit UI
+                      │
+                      ▼
+          Story Coordinator Agent
+                      │
+      ┌───────────────┼────────────────┐
+      ▼               ▼                ▼
+Story Generator   Safety Agent   Narration Agent
+      │                                │
+      ▼                                ▼
+ Story Transcript              AI Audio Generation
+      │                                │
+      └───────────────┬────────────────┘
+                      ▼
+                Story Presentation
+```
 
-StoryBuddy uses a sequential multi-agent pipeline:
+---
 
-**User → Story Agent → Safety Agent → Final Story**
+## 🤖 Multi-Agent Workflow
 
-* **Story Agent**: Generates creative, age-appropriate stories.
-* **Safety Agent**: Reviews and sanitizes content for child safety.
-* **Root Agent**: Orchestrates agent interactions using ADK.
+WonderMe uses specialized AI agents that collaborate to create a complete storytelling experience.
 
-## Agent Skills
+| Agent | Responsibility |
+|--------|----------------|
+| Story Coordinator | Manages the overall storytelling workflow |
+| Story Generator | Generates personalized stories |
+| Safety Agent | Ensures stories are child-friendly and age appropriate |
+| Narration Agent | Produces AI-generated narration |
+| Transcript Agent | Generates readable story transcripts |
 
-* Story generation skills
-* Child safety review skills
-* Age-adaptive storytelling prompts
+---
 
-## Tech Stack
+## 🛠️ Technology Stack
 
-* Google Agent Development Kit (ADK)
-* Gemini Models
-* Streamlit
-* Python
-* gTTS (Google Text-to-Speech)
+- Python
+- Streamlit
+- Google Agent Development Kit (ADK)
+- Google Gemini
+- Google AI Studio
+- Text-to-Speech
+- CSS
 
-## Project Motivation
+---
 
-StoryBuddy was developed as a capstone project for the **Google & Kaggle 5-Day AI Agents Intensive Course**, demonstrating key agentic AI concepts including multi-agent orchestration, agent skills, safety mechanisms, and deployable AI applications.
+## 📁 Project Structure
 
-## Disclaimer
+```text
+WonderMe/
+│
+├── agents/
+├── assets/
+├── prompts/
+├── skills/
+├── utils/
+├── app.py
+├── requirements.txt
+├── README.md
+└── .gitignore
+```
 
-StoryBuddy is intended for educational and demonstration purposes.
+---
+
+## 🚀 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/<your-username>/WonderMe.git
+
+cd WonderMe
+```
+
+### Create a virtual environment
+
+Windows
+
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+macOS / Linux
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## 🔑 Configure API Key
+
+Create a `.env` file.
+
+```env
+GOOGLE_API_KEY=YOUR_API_KEY
+```
+
+> **Important:** Never commit your `.env` file or API keys to GitHub.
+
+---
+
+## ▶️ Run the Application
+
+```bash
+streamlit run app.py
+```
+
+The application will launch automatically in your default web browser.
+
+---
+
+## 🎮 How to Use
+
+1. Select your favorite story character.
+2. Choose the child's age.
+3. Enter a story theme or prompt.
+4. Generate a personalized story.
+5. Listen to the AI narration.
+6. Read the transcript.
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+- Home page
+- Character selection
+- Story generation
+- Audio player
+- Transcript
+
+---
+
+## 🎥 Demo Video
+
+Watch the WonderMe demo on YouTube:
+
+**https://YOUR-YOUTUBE-LINK**
+
+---
+
+## 🌱 Future Enhancements
+
+- Additional story characters
+- Multiple language support
+- Interactive story choices
+- Voice customization
+- Story illustrations
+- Parent dashboard
+- Reading progress
+- Educational quizzes
+
+---
+
+## 🔒 Security
+
+WonderMe follows security best practices:
+
+- API keys stored using environment variables
+- `.env` excluded from Git version control
+- No secrets committed to the repository
+
+---
+
+## 🤝 Contributing
+
+Contributions, suggestions, and feature requests are welcome.
+
+Feel free to fork the repository and submit a pull request.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙏 Acknowledgements
+
+- Google AI
+- Google Agent Development Kit (ADK)
+- Google Gemini
+- Streamlit
+- Kaggle
+- Google AI Agents Intensive – Vibe Coding Capstone
+
+---
+
+## ⭐ Support
+
+If you enjoyed this project, please consider giving it a ⭐ on GitHub!
+
+Your support helps others discover WonderMe and encourages future development.
