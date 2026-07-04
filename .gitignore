@@ -1,0 +1,74 @@
+.env
+# Python
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+
+.venv/
+venv/
+env/
+
+# Environment variables
+
+.env
+
+# Streamlit
+
+.streamlit/secrets.toml
+
+# IDEs
+
+.vscode/
+.idea/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# Logs
+
+*.log
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Build artifacts
+
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+
+*.tmp
+*.temp
+
+# Audio files (generated TTS)
+
+*.mp3
+
+# SQLite databases
+
+*.db
+*.sqlite3
+
+# Test output
+
+htmlcov/
+.coverage
+.pytest_cache/
+
+# ADK generated files (optional)
+
+sessions/
+artifacts/
+
+# Misc
+
+*.swp
+*.bak
