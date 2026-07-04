@@ -19,31 +19,6 @@
 
 ---
 
-## 🏗️ Architecture
-
-```text
-                     User
-                      │
-                      ▼
-             WonderMe Streamlit UI
-                      │
-                      ▼
-          Story Coordinator Agent
-                      │
-      ┌───────────────┼────────────────┐
-      ▼               ▼                ▼
-Story Generator   Safety Agent   Narration Agent
-      │                                │
-      ▼                                ▼
- Story Transcript              AI Audio Generation
-      │                                │
-      └───────────────┬────────────────┘
-                      ▼
-                Story Presentation
-```
-
----
-
 ## 🤖 Multi-Agent Workflow
 
 WonderMe uses specialized AI agents that collaborate to create a complete storytelling experience.
@@ -53,8 +28,7 @@ WonderMe uses specialized AI agents that collaborate to create a complete storyt
 | Story Coordinator | Manages the overall storytelling workflow |
 | Story Generator | Generates personalized stories |
 | Safety Agent | Ensures stories are child-friendly and age appropriate |
-| Narration Agent | Produces AI-generated narration |
-| Transcript Agent | Generates readable story transcripts |
+
 
 ---
 
@@ -77,8 +51,6 @@ WonderMe/
 │
 ├── agents/
 ├── assets/
-├── prompts/
-├── skills/
 ├── utils/
 ├── app.py
 ├── requirements.txt
@@ -93,7 +65,7 @@ WonderMe/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/WonderMe.git
+git clone https://github.com/nehak2018/WonderMe.git
 
 cd WonderMe
 ```
@@ -171,7 +143,7 @@ Add screenshots of:
 
 Watch the WonderMe demo on YouTube:
 
-**https://YOUR-YOUTUBE-LINK**
+**https://youtu.be/MUX7SzQSz3w?si=1Q8jbO3SFoB5Y1u9**
 
 ---
 
