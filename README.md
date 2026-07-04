@@ -1,4 +1,4 @@
-# 🌟 WonderMe: AI-Powered Personalized Storytelling for Kids
+# 🌟 WonderMe: AI Storytelling Companion for Children
 
 > **WonderMe** is an AI-powered storytelling application built using **Google's Agent Development Kit (ADK)** and a **multi-agent architecture** to generate personalized, age-appropriate stories for children. The application combines multiple AI agents to create engaging stories, AI-generated narration, and story transcripts, providing a fun, interactive, and educational storytelling experience.
 
