@@ -131,32 +131,12 @@ with main_col:
                 """
 
         with st.spinner("Creating magical story with ADK agents..."):
-                st.session_state.story = """
-                **Luna's Helping Heart**
 
-                Luna was a beautiful dragon with scales that sparkled like the morning dew. 
-                She lived in a sunny valley filled with tall, green trees and bubbly rivers. 
-                Luna loved to fly But more than anything, Luna loved to help. She had the kindest heart in the whole valley.
-
-                One sunny afternoon, Luna was exploring near Whispering Woods when she heard a tiny, sad "cheep! cheep!" 
-                Luna landed softly, careful not to scare the little bird. "Hello there, tiny friend," she whispered gently. 
-                "Don't worry, I'll help you."
-
-                Using her long, gentle snout, Luna carefully nudged the nest. 
-                The baby bird chirped happily and hopped right in.
-
-                Soon, a mama bird flew back, chirping with joy when she saw her baby safe in its nest. 
-                She sang a happy song for Luna, thanking her with every note. Luna smiled, her scales gleaming. 
-                Helping others always made her heart feel warm and bright.
-
-                **Moral of the Story:** A little kindness can make a big difference, and helping others makes everyone's day brighter!
-                   """ 
-
-            # st.session_state.story = run_agent(
-            #     full_story_agent,
-            #     prompt,
-            #     session_id="full_story",
-            # )
+            st.session_state.story = run_agent(
+                full_story_agent,
+                prompt,
+                session_id="full_story",
+            )
 
     if st.session_state.story:
         with st.spinner("Preparing audio narration and transcript..."):
